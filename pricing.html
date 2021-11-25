@@ -4,17 +4,123 @@
  <link rel="stylesheet" href="style.css">
     </head>
 <body>
-    <div class="switch">
+    <div class="checkbox">
         <label class="toggle" >
-            <input type="checkbox" name="switch" id="swich">
+            <input type="checkbox" name="checkbox" id="checkbox" onclick="checked" >
             <span class="ball"></span>
         </label>
     </div>
-<section class="pricing">
+    <section class="pricing ">
+
+        <!--
+            pricing 2
+        -->
+        <div class="price">
+        <div class="pricehead ">
+            <h1 class="pricetitle">FIRST VIEW</h1>
+            <p class="pricetag">100,000 rwf</p>
+            <p class="pricetext">/per month</p>
+            <a href="#" class="btn">Purchase</a>
+          
+        </div> 
+        
+        <div class="priceaction">
+            <h2 class="pricesammary">DESCRIPTION</h2>
+            <div class="price_descrion">
+                <ul class="pricelist">
+                    <li class="pricefeature">list 1</li>
+                    <li class="pricefeature">list 1</li>
+                    <li class="pricefeature">list 1</li>
+                    <li class="pricefeature">list 1</li>
+                </ul>
+            </div>
+        </div>
+        </div>
+        
+        
+        <!--
+            pricing 2
+        --><div class="price">
+            <div class="pricehead ">
+                <h1 class="pricetitle">FIRST VIEW</h1>
+                <p class="pricetag">100,000 rwf</p>
+                <p class="pricetext">/per month</p>
+                <a href="#" class="btn">Purchase</a>
+              
+            </div> 
+            
+            <div class="priceaction">
+                <h2 class="pricesammary">DESCRIPTION</h2>
+                <div class="price_descrion">
+                    <ul class="pricelist">
+                        <li class="pricefeature">list 1</li>
+                        <li class="pricefeature">list 1</li>
+                        <li class="pricefeature">list 1</li>
+                        <li class="pricefeature">list 1</li>
+                    </ul>
+                </div>
+            </div>
+            </div>
+        
+            <!--
+            pricing 3
+        --><div class="price">
+        <div class="pricehead ">
+            <h1 class="pricetitle">FIRST VIEW</h1>
+            <p class="pricetag">50,000 rwf</p>
+            <p class="pricetext">/per month</p>
+            <a href="#" class="btn">Purchase</a>
+          
+        </div> 
+        
+        <div class="priceaction">
+            <h2 class="pricesammary">DESCRIPTION</h2>
+            <div class="price_descrion">
+                <ul class="pricelist">
+                    <li class="pricefeature">list 1</li>
+                    <li class="pricefeature">list 1</li>
+                    <li class="pricefeature">list 1</li>
+                    <li class="pricefeature">list 1</li>
+                </ul>
+            </div>
+        </div>
+        </div>
+        
+        <!--
+            pricing 4
+        --><div class="price">
+            <div class="pricehead ">
+                <h1 class="pricetitle">FIRST VIEW</h1>
+                <p class="pricetag">100,000 rwf</p>
+                <p class="pricetext">/per month</p>
+                <a href="#" class="btn">Purchase</a>
+              
+            </div> 
+            
+            <div class="priceaction">
+                <h2 class="pricesammary">DESCRIPTION</h2>
+                <div class="price_descrion">
+                    <ul class="pricelist">
+                        <li class="pricefeature">list 1</li>
+                        <li class="pricefeature">list 1</li>
+                        <li class="pricefeature">list 1</li>
+                        <li class="pricefeature">list 1</li>
+                    </ul>
+                </div>
+            </div>
+            </div>
+            </section>
+    
+
+
+<!-- per year-->
+
+<section class=" bgmodal" id="message">
 
 <!--
-    pricing 2
---><div class="price">
+    pricing 1
+--><div class="pricing">
+<div class="price">
 <div class="pricehead ">
     <h1 class="pricetitle">FIRST VIEW</h1>
     <p class="pricetag">100,000 rwf</p>
@@ -79,7 +185,7 @@
             <li class="pricefeature">list 1</li>
             <li class="pricefeature">list 1</li>
             <li class="pricefeature">list 1</li>
-            <li class="pricefeature">list 1</li>
+            <li class="pricefeature">list 11</li>
         </ul>
     </div>
 </div>
@@ -100,16 +206,33 @@
         <h2 class="pricesammary">DESCRIPTION</h2>
         <div class="price_descrion">
             <ul class="pricelist">
-                <li class="pricefeature">list 1</li>
-                <li class="pricefeature">list 1</li>
-                <li class="pricefeature">list 1</li>
-                <li class="pricefeature">list 1</li>
+                <li class="pricefeature">list 11</li>
+                <li class="pricefeature">list 11</li>
+                <li class="pricefeature">list 11</li>
+                <li class="pricefeature">list 11</li>
             </ul>
         </div>
     </div>
     </div>
+</div>
     </section>
-    </p>
+  <script>
+
+//const checkbox = document.getElementById('checkbox');
+//checkbox.addEventListener('change', () => {
+	//document.body.classList.toggle('bgmodal');
+  //  document.querySelector('.bgmodal').style.display = "flex";
+//})
+
+document.getElementById("checkbox").onclick=function(){
+    if (this.checked){
+    console.log(document.querySelector('.bgmodal').style.display = "flex");
+}else{
+    console.log(document.querySelector('.bgmodal').style.display = "none");
+}
+}
+  </script>
+   
 </body>
 
 
