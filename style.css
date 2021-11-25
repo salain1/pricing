@@ -1,4 +1,5 @@
 body{
+    background-image: url("sample.jpg");
  
 }
 .pricing{
@@ -7,6 +8,7 @@ justify-content: center;
 align-items: stretch;
 margin: 2em;
 height: 100vh;
+background-color: #ffff;
 
 }
 .price{
@@ -99,12 +101,12 @@ margin: 0;
     text-align: center;
     font-size: 00.9em;
 }
-.switch{
+.checkbox{
     justify-content: right;
     display: flex;
     align-items: right;
     width: 100%;
-    margin-top: 50px;
+    margin-top: 40px;
 }
 label.toggle{
     position: relative;
@@ -127,7 +129,7 @@ label.toggle{
     transform: .35s;
     background-color: #eee;
     border-radius: 30px;
-    transition: transform 0.2s linear;
+    transition: 0.55s ;
 }
 .ball::before{
     position: absolute;
@@ -147,4 +149,15 @@ input:checked + .ball{
 }
 input:checked + .ball::before {
 transform: translateX(45px);
+}
+.bgmodal{
+    width:93.5%;
+    height:  97%;
+    background-color:#ffff;
+    position: absolute;
+    top: 14.7%;
+    display: none;
+    margin-left: 2.5%;
+    
+    
 }
