@@ -6,7 +6,7 @@ body{
 display: flex;
 justify-content: center;
 align-items: stretch;
-margin: 2em;
+margin: 4em;
 height: 100vh;
 
 
@@ -25,7 +25,7 @@ height: 100vh;
 }
 .pricehead{
 padding: 25px;
-//background-color: #009578;
+
 color: black;
 text-align: center;
 }
@@ -64,7 +64,7 @@ margin: 0;
 .pricefeature::before{
     content: "\2714";
     color: #009578;
-    left: 30%;
+    left: -10%;
     position: absolute;
 }
 .priceaction{
@@ -105,8 +105,10 @@ margin: 0;
     justify-content: right;
     display: flex;
     align-items: right;
-    width: 100%;
-    margin-top: 40px;
+    width: 98%;
+    margin-top:-2%;
+    position: fixed;
+    z-index: 12;
 }
 label.toggle{
     position: relative;
@@ -153,7 +155,7 @@ transform: translateX(45px);
 .bgmodal{
     width: 300px;
     height:  500px;
-    background-color:#ffff;
+  
     position: absolute;
     top: 14.2%;
     display: none;
@@ -165,9 +167,20 @@ transform: translateX(45px);
     display: flex;
     justify-content: center;
     align-items: stretch;
-    margin-left: 0.7%;
-    margin-top: -0.2%;
+    margin: -2.2rem;
     height: 100vh;
-  
+  margin-left: 8%;
+  width: 1200px;
     
     }
+header{
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+display: flex;
+justify-content: space-between;
+align-items: center;
+transition: 0.6s;
+
+}
