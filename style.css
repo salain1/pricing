@@ -173,14 +173,4 @@ transform: translateX(45px);
   width: 1200px;
     
     }
-header{
-position: fixed;
-top: 0;
-left: 0;
-width: 100%;
-display: flex;
-justify-content: space-between;
-align-items: center;
-transition: 0.6s;
 
-}
